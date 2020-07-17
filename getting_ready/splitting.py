@@ -20,7 +20,7 @@ my_data = Data(dataset)
 my_data.divide_dataset(0.8)
 print(f' Training batch: {my_data.train_batch} \n Testing Batch: {my_data.test_batch}')'''
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
-dataset1=pd.read_csv('diabetes.csv',names=names)
+dataset1=pd.read_csv('diabetes.csv', names=names)
 dataset = dataset1.iloc[1:]
 dataset = dataset.astype(float)
 class_count=dataset['class'].value_counts()
